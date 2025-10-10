@@ -1,2 +1,26 @@
+# Web framework
 Flask==2.3.3
-openai==1.28.0
+
+# Cross-Origin Resource Sharing (for frontend <-> backend calls)
+Flask-Cors==3.1.1
+
+# HTTP requests library (for calling GroqCloud/OpenAI API)
+requests==2.31.0
+
+# Optional async HTTP client (for non-blocking API calls)
+httpx==0.24.1
+
+# Environment variable management (secure API keys)
+python-dotenv==1.0.1
+
+# Data validation / parsing
+pydantic==2.3.0
+
+# Production WSGI server for Render
+gunicorn==22.2.0
+
+# Optional: progress bars / CLI enhancements (used by OpenAI library)
+tqdm==4.67.1
+
+# Optional: additional typing support (used by pydantic/OpenAI)
+typing-extensions==4.15.0
