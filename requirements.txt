@@ -1,26 +1,9 @@
-# Web framework
 Flask==2.3.3
-
-# Cross-Origin Resource Sharing
 Flask-Cors==6.0.1
-
-# HTTP requests library
 requests==2.31.0
-
-# Optional async HTTP client
 httpx==0.24.1
-
-# Environment variable management
 python-dotenv==1.0.1
-
-# Data validation / parsing
-pydantic==2.3.0
-
-# Production WSGI server
+pydantic==2.12.0
 gunicorn==23.0.0
-
-# Optional: progress bars / CLI enhancements
 tqdm==4.67.1
-
-# Optional: typing support
 typing-extensions==4.15.0
