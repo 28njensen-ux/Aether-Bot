@@ -1,0 +1,34 @@
+/* Blurred Background for Chat Pages */
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('images/BackgroundDocker.png') no-repeat center center;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: inherit; /* inherit the same background image */
+    filter: blur(10px); /* extreme blur */
+    z-index: -1; /* push behind content */
+}
+
+/* Optional: make content readable */
+#chatWindow{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-width: 2px;
+    border-style: dotted;
+    border-color: aqua;
+    border-radius: 20px;
+    padding: 10px;
+    background: radial-gradient(circle, rgb(10, 7, 60), rgb(10, 49, 0));
+}
