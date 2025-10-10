@@ -1,0 +1,79 @@
+body {
+    font-family: Helvetica, Georgia, Cambria, Impact, Arial, Serif;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    line-height: 1.2em;
+    letter-spacing: 2.5px;
+    color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(270deg, #0f2027, #203a43, #2c5364, #0f2027);
+    background-size: 1600% 800%;
+    animation: gradientShift 60s ease infinite;
+}
+
+.sparklingbox {
+    position: relative;
+    width: 600px;
+    max-width: 90%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.sparklingbox span.crystal {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+    animation: sparkles 4s ease-in-out infinite alternate;
+}
+
+@keyframes sparkles {
+    0% { transform: translateY(0) scale(1); opacity: 0.6; }
+    50% { transform: translateY(-8px) scale(1.2); opacity: 1; }
+    100% { transform: translateY(0) scale(1); opacity: 0.6; }
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    10% { background-position: 25% 75%; }
+    20% { background-position: 20% 65%; }
+    30% { background-position: 55% 60%; }
+    40% { background-position: 75% 55%; }
+    50% { background-position: 100% 50%; }
+    60% { background-position: 55% 75%; }
+    70% { background-position: 60% 55%; }
+    80% { background-position: 65% 20%; }
+    90% { background-position: 75% 50%; }
+    100% { background-position: 50% 0%; }
+}
+
+a {
+    display: inline-block;
+    color: #ff7e5f;
+    font-size: 1.5em;
+    text-shadow: 0 0 5px #ff7e5f, 0 0 10px #ff7e5f;
+    animation: float 2s ease-in-out infinite alternate;
+    transition: transform 0.3s ease;
+}
+
+a:hover { transform: scale(1.5); text-shadow: 2px 2px 5px rgba(0,0,0,1); }
+#index a:active { transform: scale(1.2); }
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+
+
+
+
