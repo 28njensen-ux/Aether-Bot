@@ -1,0 +1,10 @@
+{
+  "users": {
+    "guest1": { "username": "Alice", "password_hash": "..." }
+  },
+  "chats": {
+    "guest1": [
+      { "user": "Hi", "ai": "Hello!" }
+    ]
+  }
+}
