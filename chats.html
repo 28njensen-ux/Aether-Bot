@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Aether Bot - chats</title>
+        <link rel="stylesheet" href="chats.css">
+    </head>
+    <body id="chats">
+        <div id="left">
+            <div class="sidebar">
+            <div class="top">collapse</div>
+            <div class="chat-history">
+                <p>Chat 1</p>
+                <p>Chat 2</p>
+                <p>Chat 3</p>
+
+                <div class="chat-area" id="chat-area">
+                    <p>Select a chat from the left</p>
+                    </div>
+            </div>
+            <div class="bottom">
+                <button id="settings">⚙️</button>
+                <button id="main">🏠</button>
+                <button id="chats-btn">💬</button>
+            </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="right">
+            <div class="messages">
+                <p>Input your Prompt to start chatting!</p>
+            </div>
+        
+            <!-- Chat input area -->
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Type your message..." />
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+        
+
+        <script src="frontend.js"></script>
+    </body>
+</html>
