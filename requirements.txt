@@ -17,7 +17,7 @@ python-dotenv==1.0.1
 pydantic==2.3.0
 
 # Production WSGI server for Render
-gunicorn==22.2.0
+gunicorn==23.0.0
 
 # Optional: progress bars / CLI enhancements (used by OpenAI library)
 tqdm==4.67.1
